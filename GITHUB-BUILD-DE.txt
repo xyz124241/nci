@@ -1,0 +1,16 @@
+ACI 1.4.1 fuer Paper 1.21.3 – GitHub-Build
+
+DIESES PAKET ENTHAELT DEN JAVA-QUELLCODE UND DAS RESOURCEPACK, KEINE FERTIG KOMPILIERTE JAR.
+Die JAR wird durch GitHub Actions mit Paper-API 1.21.3 gebaut.
+
+1. ZIP entpacken und den Ordner ACI in ein GitHub-Repository hochladen.
+2. Auf GitHub den Branch main pushen. Actions baut die JAR als Artifact.
+3. Tag v1.4.1 erstellen und pushen: git tag v1.4.1 && git push origin v1.4.1
+4. Danach im GitHub Release die Dateien ACI-1.4.1.jar und ACI-Crystals-ResourcePack-1.21.3-v1.4.1.zip laden.
+5. Plugin-JAR nach plugins/ kopieren. Das Resourcepack nicht in plugins ablegen.
+6. Für GitHub-Autodownload in plugins/ACI/config.yml die OWNER/REPO-URL und SHA-1 eintragen (siehe README).
+
+Manuelle Resourcepack-Installation: Nur ACI-Crystals-ResourcePack-1.21.3-v1.4.1.zip nach %appdata%\.minecraft\resourcepacks legen und im Spiel aktivieren.
+
+Resourcepack SHA-1:
+4cb2fba185d3885289e67b034da8d05b67275fb3
