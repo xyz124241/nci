@@ -521,7 +521,7 @@ public final class ItemManager implements Listener {
 
     /** Ersetzt veraltete Custom Items im Inventar durch die aktuelle Version (Name, Lore, Textur). */
     public void refreshInventory(Player p) {
-        PlayerInventory inv = p.getInventory();
+        org.bukkit.inventory.PlayerInventory inv = p.getInventory();
         ItemStack[] contents = inv.getContents();
         for (int i = 0; i < contents.length; i++) {
             ItemStack s = contents[i];
